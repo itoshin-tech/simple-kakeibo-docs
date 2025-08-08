@@ -1,1 +1,0 @@
-# kakeibo-app-privacy-policy
