@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使い方ガイド - シンプル家計簿</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #4CAF50;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #333;
+            margin-top: 40px;
+            padding: 10px 0;
+            border-left: 4px solid #4CAF50;
+            padding-left: 15px;
+        }
+        h3 {
+            color: #555;
+            margin-top: 25px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .feature-box {
+            background-color: #f9f9f9;
+            border-left: 4px solid #4CAF50;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .step {
+            background-color: #e8f5e8;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        .step-number {
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        .tip {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 4px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .tip-title {
+            font-weight: bold;
+            color: #856404;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← トップページに戻る</a>
+        
+        <h1>使い方ガイド</h1>
+        
+        <h2>🚀 基本的な使い方</h2>
+        
+        <h3>支出の記録方法</h3>
+        <div class="step">
+            <span class="step-number">1</span>
+            <strong>金額を入力</strong><br>
+            ホーム画面の金額欄に支出額を入力します。数字キーパッドを使って簡単に入力できます。
+        </div>
+        
+        <div class="step">
+            <span class="step-number">2</span>
+            <strong>カテゴリを選択</strong><br>
+            食費、交通費、娯楽など、該当するカテゴリのアイコンをタップします。
+        </div>
+        
+        <div class="step">
+            <span class="step-number">3</span>
+            <strong>完了！</strong><br>
+            カテゴリをタップすると自動的に記録されます。メモや日付は必要に応じて入力できます。
+        </div>
+        
+        <div class="tip">
+            <div class="tip-title">💡 コツ</div>
+            「金額を入れてカテゴリタップで登録完了！」が基本操作です。
+        </div>
+        
+        <h2>📊 データの確認</h2>
+        
+        <h3>月別推移の確認</h3>
+        <p>画面下部の「月別」タブから、毎月の支出推移をグラフで確認できます。</p>
+        
+        <div class="feature-box">
+            <strong>プレミアム機能</strong><br>
+            より詳細な分析機能をご利用いただけます：
+            <ul>
+                <li>月別推移グラフ</li>
+                <li>カテゴリ別推移グラフ</li>
+                <li>高度な統計情報</li>
+            </ul>
+        </div>
+        
+        <h3>支出履歴の確認</h3>
+        <p>「一覧」タブから過去の支出記録を時系列で確認できます。各記録の編集・削除も可能です。</p>
+        
+        <h2>⚙️ カテゴリの管理</h2>
+        
+        <h3>カテゴリの追加・編集</h3>
+        <ol>
+            <li>「設定」タブをタップ</li>
+            <li>「カテゴリを編集」を選択</li>
+            <li>新しいカテゴリの追加や既存カテゴリの編集が可能</li>
+        </ol>
+        
+        <h3>カテゴリの並び替え</h3>
+        <ol>
+            <li>ホーム画面右上の並び替えアイコンをタップ</li>
+            <li>ロックを解除</li>
+            <li>カテゴリアイコンをドラッグして並び替え</li>
+        </ol>
+        
+        <h2>💾 データの管理</h2>
+        
+        <h3>バックアップの作成</h3>
+        <div class="feature-box">
+            <strong>プレミアム機能</strong><br>
+            <ol>
+                <li>「設定」→「データをエクスポート」</li>
+                <li>保存先を選択</li>
+                <li>バックアップファイル（JSON形式）が作成されます</li>
+            </ol>
+        </div>
+        
+        <h3>データの復元</h3>
+        <div class="feature-box">
+            <strong>プレミアム機能</strong><br>
+            <ol>
+                <li>「設定」→「データをインポート」</li>
+                <li>バックアップファイルを選択</li>
+                <li>データが復元されます（重複は自動でスキップ）</li>
+            </ol>
+        </div>
+        
+        <h3>PayPayデータの取り込み</h3>
+        <div class="feature-box">
+            <strong>プレミアム機能</strong><br>
+            PayPayの取引履歴CSVファイルから支出記録を自動取り込みできます。
+            <ol>
+                <li>PayPayアプリから取引履歴をCSVでエクスポート</li>
+                <li>「設定」→「PayPayデータをインポート」</li>
+                <li>CSVファイルを選択して取り込み</li>
+            </ol>
+        </div>
+        
+        <h2>🔧 その他の便利機能</h2>
+        
+        <h3>画面の向き</h3>
+        <p>アプリは縦向き固定で、片手での操作に最適化されています。</p>
+        
+        <h3>データの安全性</h3>
+        <p>すべてのデータはお客様のデバイス内にのみ保存され、外部サーバーには送信されません。</p>
+        
+        <div class="tip">
+            <div class="tip-title">❓ その他のご質問</div>
+            ご不明な点がございましたら、<a href="support.html">サポートページ</a>からお問い合わせください。
+        </div>
+    </div>
+</body>
+</html>
