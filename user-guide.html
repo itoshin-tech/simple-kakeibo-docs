@@ -86,6 +86,30 @@
         li {
             margin-bottom: 8px;
         }
+        .screenshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            margin: 20px 0;
+        }
+        .screenshot-small {
+            max-width: 300px;
+            margin: 15px auto;
+            display: block;
+        }
+        .screenshot-row {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .screenshot-row img {
+            max-width: 250px;
+            flex: 1;
+            min-width: 200px;
+        }
     </style>
 </head>
 <body>
@@ -95,6 +119,25 @@
         <h1>使い方ガイド</h1>
         
         <h2>🚀 基本的な使い方</h2>
+        
+        <h3>ホーム画面</h3>
+        <div class="screenshot-row">
+            <img src="images/ホーム画面_デフォルト.png" alt="ホーム画面（デフォルト）" class="screenshot">
+            <img src="images/ホーム画面_カスタム.png" alt="ホーム画面（カスタマイズ後）" class="screenshot">
+        </div>
+        <p style="text-align: center; color: #666; font-size: 14px;">左：デフォルト状態　右：カスタマイズ後</p>
+        
+        <h3>カテゴリのカスタマイズ</h3>
+        <p>ホーム画面では、カテゴリを自分好みにカスタマイズできます：</p>
+        <ul>
+            <li><strong>カテゴリの並び替え</strong>：右上の⋮⋮（6つの点）アイコンをタップしてロックを解除し、カテゴリをドラッグして位置を変更できます</li>
+            <li><strong>カテゴリの編集・追加・削除</strong>：右上の⚙️（設定）アイコンをタップして「カテゴリを編集」から、新しいカテゴリの追加や既存カテゴリの編集・削除ができます</li>
+        </ul>
+        
+        <div class="tip">
+            <div class="tip-title">💡 便利な使い方</div>
+            よく使うカテゴリを上の方に配置することで、より素早く記録できるようになります。
+        </div>
         
         <h3>支出の記録方法</h3>
         <div class="step">
@@ -120,10 +163,59 @@
             「金額を入れてカテゴリタップで登録完了！」が基本操作です。
         </div>
         
-        <h2>📊 データの確認</h2>
+        <h2>📅 カレンダー機能</h2>
+        
+        <p>シンプル家計簿の便利なカレンダー機能では、いつどれだけお金を使ったかが一目でわかります。</p>
+        <p>1000円以下が青、2000円以下が黄色、一万円以下が緑、それ以上が赤で表示されます。</p>
+        <div class="screenshot-row">
+            <img src="images/カレンダー.png" alt="カレンダー表示" class="screenshot">
+            <img src="images/カレンダーから日付選択.png" alt="カレンダーからの日付選択" class="screenshot">
+        </div>
+        <p style="text-align: center; color: #666; font-size: 14px;">左：支出記録時の日付選択　右：カレンダーでの支出確認</p>
+        
+        <h3>カレンダーでできること</h3>
+        <ul>
+            <li><strong>支出状況の一覧表示</strong>：各日付に支出金額が表示され、月全体の支出パターンが分かります</li>
+            <li><strong>詳細内容の確認</strong>：日付をタップすると、その日の支出詳細を確認できます</li>
+            <li><strong>過去日付での記録追加</strong>：忘れていた支出を過去の日付で記録できます</li>
+            <li><strong>視覚的な支出管理</strong>：支出の多い日、少ない日が色や金額で一目瞭然</li>
+        </ul>
+        
+        <div class="tip">
+            <div class="tip-title">💡 活用方法</div>
+            月末にカレンダーを見返すことで、無駄遣いしやすい日や節約できた日のパターンを把握できます。
+        </div>
+        
+        <h2>📊 カテゴリ別支出分析</h2>
+        
+        <p>円チャートで月別のカテゴリごとの支出割合を視覚的に確認できます。どのカテゴリにお金を使っているかが一目瞭然です。</p>
+        
+        <div class="screenshot-row">
+            <img src="images/円チャート.png" alt="カテゴリ別円チャート" class="screenshot">
+            <img src="images/円チャートで凡例選択.png" alt="凡例選択でのポップアップ表示" class="screenshot">
+        </div>
+        <p style="text-align: center; color: #666; font-size: 14px;">左：カテゴリ別支出円チャート　右：凡例選択でのポップアップ表示</p>
+        
+        <h3>円チャートの便利機能</h3>
+        <ul>
+            <li><strong>視覚的な支出把握</strong>：円チャートで各カテゴリの支出割合が一目で分かります</li>
+            <li><strong>詳細内訳の確認</strong>：凡例をタップするとポップアップが表示され、該当カテゴリの詳細を確認できます</li>
+            <li><strong>データの修正・追加</strong>：ポップアップから直接、支出記録の修正や新しい記録の追加が可能です</li>
+            <li><strong>カテゴリ比較</strong>：複数のカテゴリを比較して、支出バランスを把握できます</li>
+        </ul>
+        
+        <div class="tip">
+            <div class="tip-title">💡 活用方法</div>
+            円チャートを見ることで「今月は食費が多すぎる」「交通費を節約できている」など、支出の傾向を素早く把握できます。
+        </div>
+        
+        <h2>📈 データの確認</h2>
         
         <h3>月別推移の確認</h3>
         <p>画面下部の「月別」タブから、毎月の支出推移をグラフで確認できます。</p>
+        <p>会社経費など、除外したい項目をタップで選ぶことができます。</p>
+        
+        <img src="images/月別推移.png" alt="月別推移グラフ" class="screenshot screenshot-small">
         
         <div class="feature-box">
             <strong>プレミアム機能</strong><br>
@@ -134,9 +226,15 @@
                 <li>高度な統計情報</li>
             </ul>
         </div>
+        <p>表示したいカテゴリを選んで、月別の推移を見ることができます。</p>
+
+        
+        <img src="images/カテゴリ別推移.png" alt="カテゴリ別推移グラフ" class="screenshot screenshot-small">
         
         <h3>支出履歴の確認</h3>
         <p>「一覧」タブから過去の支出記録を時系列で確認できます。各記録の編集・削除も可能です。</p>
+        <p> 検索やカテゴリ選択で抽出したアイテムを、一括してカテゴリを変更することもできます。</p>
+        <img src="images/支出一覧.png" alt="支出一覧画面" class="screenshot screenshot-small">
         
         <h2>⚙️ カテゴリの管理</h2>
         
@@ -146,6 +244,17 @@
             <li>「カテゴリを編集」を選択</li>
             <li>新しいカテゴリの追加や既存カテゴリの編集が可能</li>
         </ol>
+        
+        <div class="screenshot-row">
+            <img src="images/設定.png" alt="設定画面" class="screenshot">
+            <img src="images/カテゴリ管理.png" alt="カテゴリ管理画面" class="screenshot">
+        </div>
+        <p style="text-align: center; color: #666; font-size: 14px;">左：設定画面　右：カテゴリ管理画面</p>
+        
+        <h3>絵文字の選択</h3>
+        <p>カテゴリには豊富な絵文字から好きなものを選択できます。</p>
+        
+        <img src="images/絵文字を選択.png" alt="絵文字選択画面" class="screenshot screenshot-small">
         
         <h3>カテゴリの並び替え</h3>
         <ol>
@@ -186,6 +295,12 @@
                 <li>CSVファイルを選択して取り込み</li>
             </ol>
         </div>
+        <p>自動取り込みしたアイテムは自動でカテゴリが振り分けられます。
+            判定ができないものは「その他」に振り分けられます。
+            修正が必要な場合には、一覧画面の「カテゴリ一括変換」機能が便利です。</p>
+        
+        <img src="images/カテゴリ一括変換.png" alt="カテゴリ一括変換画面" class="screenshot screenshot-small">
+        <p style="text-align: center; color: #666; font-size: 14px;">PayPayデータ取り込み時のカテゴリ一括変換機能</p>
         
         <h2>🔧 その他の便利機能</h2>
         
@@ -195,10 +310,6 @@
         <h3>データの安全性</h3>
         <p>すべてのデータはお客様のデバイス内にのみ保存され、外部サーバーには送信されません。</p>
         
-        <div class="tip">
-            <div class="tip-title">❓ その他のご質問</div>
-            ご不明な点がございましたら、<a href="support.html">サポートページ</a>からお問い合わせください。
-        </div>
     </div>
 </body>
 </html>
